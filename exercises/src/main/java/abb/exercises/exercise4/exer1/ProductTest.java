@@ -1,4 +1,4 @@
-package abb.exercise;
+package abb.exercises.exercise4.exer1;
 
 import java.util.Scanner;
 
@@ -10,11 +10,9 @@ public class ProductTest {
         String productName = sc.nextLine();
         Product product = new Product(productName);
 
-        // Print out the details of the product
         System.out.println("Company Name: " + Product.companyName);
         System.out.println("Product ID: " + product.getProductID());
         System.out.println("Product Name: " + product.getProductName());
 
-        sc.close();
     }
 }

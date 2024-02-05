@@ -1,4 +1,4 @@
-package abb.exercise;
+package abb.exercises.exercise4.exer1;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
