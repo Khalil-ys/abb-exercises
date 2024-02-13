@@ -14,5 +14,15 @@ public class ProductTest {
         System.out.println("Product ID: " + product.getProductID());
         System.out.println("Product Name: " + product.getProductName());
 
+
+        String productName1=sc.nextLine();
+        Product product1 = new Product(productName1);
+
+
+        System.out.println("Company Name: " + Product.companyName);
+        System.out.println("Product ID: " + product1.getProductID());
+        System.out.println("Product Name: " + product1.getProductName());
+
+
     }
 }

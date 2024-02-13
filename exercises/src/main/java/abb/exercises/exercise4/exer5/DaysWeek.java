@@ -8,8 +8,9 @@ public class DaysWeek {
         for (DaysOfWeek day : daysOfWeek) {
             if (day.isWeekend(day)) {
                 System.out.println(day + " is weekend !");
+            }else {
+                System.out.println(day);
             }
-            System.out.println(day);
         }
 
     }
