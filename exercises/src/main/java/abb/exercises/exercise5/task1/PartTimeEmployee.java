@@ -1,5 +1,6 @@
 package abb.exercises.exercise5.task1;
 
+
 public class PartTimeEmployee implements Employee{
 
     private String name;
