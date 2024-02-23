@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 @Data
 @AllArgsConstructor
@@ -81,7 +80,7 @@ public class Library {
 
     public List<Book> getAllBooksSortedByPublicationYear() {
         return books.stream()
-                .sorted(Comparator.comparing(Book::getPublicationYear))
+                .sorted(Comparator.comparingInt(Book::getPublicationYear))
                 .toList();
     }
 
