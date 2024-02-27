@@ -4,18 +4,26 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        while (true){
+        Scanner sc = new Scanner(System.in);
+        while (true) {
             try {
-                System.out.print("Enter number : ");
-                int i = Integer.parseInt(sc.next());
-                int square=i*i;
-                System.out.println("Square : "+square);
+                extracted(sc);
                 break;
-            }catch (NumberFormatException e){
-                System.out.println("Not an integer : "+e.getMessage());
+            } catch (FormatException e) {
+                System.out.println("Not an integer : " + e.getMessage());
             }
         }
         sc.close();
+    }
+
+    private static void extracted(Scanner sc) {
+        System.out.print("Enter number : ");
+        try {
+            int i = Integer.parseInt(sc.next());
+            int square = i * i;
+            System.out.println("Square : " + square);
+        } catch (Exception e) {
+            throw new FormatException("Format");
+        }
     }
 }
