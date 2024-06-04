@@ -1,9 +1,14 @@
 package abb.exercises.exercise10.task2;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
+
+        OutputStream outputStream=new FileOutputStream("mkcd.txt");
         Scanner sc=new Scanner(System.in);
         while (true){
             try {
